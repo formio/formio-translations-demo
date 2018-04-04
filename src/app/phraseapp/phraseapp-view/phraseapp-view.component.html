@@ -1,0 +1,25 @@
+<h3>PhraseApp View Mode</h3>
+<p>
+  As a reminder, you can download a copy of this <a href='https://help.form.io/assets/project/phraseapp.json' download>form definition here</a>
+  or you can locate a copy in the assets folder of this repository.
+</p>
+
+<div class="row">
+  <div class="col-sm-4">
+    <button class="btn btn-primary btn-md btn-block " (click)="switchLanguage('en')">en</button>
+  </div>
+  <div class="col-sm-4">
+    <button class="btn btn-primary btn-md btn-block" (click)="switchLanguage('es')">es</button>
+  </div>
+  <div class="col-sm-4">
+    <p>Active Language = {{ 'activeLang' | translate }}</p>
+  </div>
+</div>
+
+<hr>
+
+<div class="card" style="padding: 10px">
+  <div class="card-block">
+    <div id="PhraseView"></div>
+  </div>
+</div>
