@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootswatch/dist/pulse/_variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootswatch/dist/pulse/_bootswatch.scss";
+
+#CoreRender, #Resource {
+  padding: 10px;
+}
+
+@media (min-width: 992px) {
+  .home-card {
+    min-height: 250px;
+  }
+
+  .home-card .btn {
+    position:absolute;
+    bottom:0;
+  }
+}
+
+table {
+  text-align: center;
+}
+
+.card{
+  margin-bottom: 10px;
+}
+

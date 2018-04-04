@@ -4,5 +4,9 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  phraseAppId: '',
+  phraseAppToken: 'token xxx',
+  appUrl: 'https://examples.form.io',
+  apiUrl: 'https://api.form.io',
 };
