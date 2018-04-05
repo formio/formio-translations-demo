@@ -8,7 +8,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { PlatformComponent } from './platform/platform.component';
 import { PlatformFormiojsComponent } from './platform/platform-formiojs/platform-formiojs.component';
 import { PlatformResourceComponent } from './platform/platform-resource/platform-resource.component';
 import { PhraseappModule } from './phraseapp/phraseapp.module';
@@ -26,7 +25,6 @@ const navStack: Routes = [
   { path: '', component: HomeComponent},
   { path: 'phraseapp/instructions', component: PhraseappComponent },
   { path: 'phraseapp/view', component: PhraseappViewComponent },
-  { path: 'platform', component: PlatformComponent },
   { path: 'platform/formiojs', component: PlatformFormiojsComponent },
   { path: 'platform/resource', component: PlatformResourceComponent },
   { path: '**', pathMatch: 'full', redirectTo: ''}
@@ -37,7 +35,6 @@ const navStack: Routes = [
     AppComponent,
     HomeComponent,
     NavigationComponent,
-    PlatformComponent,
     PlatformFormiojsComponent,
     PlatformResourceComponent,
     PhraseappComponent,

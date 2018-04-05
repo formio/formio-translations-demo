@@ -19,18 +19,21 @@ export class PhraseappViewComponent implements OnInit {
     this.PhraseId = environment.phraseAppId;
     this.PhraseBase = 'https://api.phraseapp.com/api/v2/projects/' + this.PhraseId + '/locales/';
     this.formRemote = environment.appUrl + '/phraseapp';
+    translate.currentLoader['prefix'] = environment.assetLocation;
+    translate.setDefaultLang('en');
   }
+
   switchLanguage(language: string) {
     (<any>window).setLanguage(language);
     this.translate.use(language);
   }
 
-  getLanguages():Promise<any> {
+  getLanguages(): Promise<any> {
     return this.http.get(this.PhraseBase).toPromise();
   }
 
   getTranslations(data) {
-    let promises:any = [];
+    let promises: any = [];
     for (let i = 0; i < data.length; i++) {
       promises.push(this.http.get(this.PhraseBase + data[i]['id'] + '/translations').toPromise());
     }

@@ -48,7 +48,7 @@ export class PlatformFormiojsComponent implements OnInit {
   }
 
   ngOnInit() {
-    createForm(document.getElementById('CoreRender'), this.formURL , {
+    createForm(document.getElementById('CoreRenderer'), this.formURL , {
       i18n: { 'en': { Submit: 'Complete' } }
     }).then(form => {
       (<any>window).setLanguage = function (lang) {

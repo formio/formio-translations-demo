@@ -2,7 +2,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~bootswatch/dist/pulse/_bootswatch.scss";
 
-#CoreRender, #Resource {
+#CoreRenderer, #Resource {
   padding: 10px;
 }
 
@@ -25,3 +25,10 @@ table {
   margin-bottom: 10px;
 }
 
+p a {
+  text-decoration: underline;
+}
+
+.btn {
+  text-decoration: none !important;
+}
