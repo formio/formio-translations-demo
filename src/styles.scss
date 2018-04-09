@@ -32,3 +32,8 @@ p a {
 .btn {
   text-decoration: none !important;
 }
+
+.field-required:after {
+  content: " *";
+  color: red;
+}
